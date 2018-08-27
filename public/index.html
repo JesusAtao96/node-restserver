@@ -11,6 +11,8 @@
 </head>
 <body>
 
+    <img src="http://localhost:3000/imagen/usuarios/5b7b3b599318562d1c3add30-713.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7InJvbGUiOiJBRE1JTl9ST0xFIiwiZXN0YWRvIjp0cnVlLCJnb29nbGUiOmZhbHNlLCJfaWQiOiI1YjdiNDgyODQyOTBjNzA4ZjQ3ZWQ2NzciLCJub21icmUiOiJUZXN0IDEiLCJlbWFpbCI6InRlc3QxQGdtYWlsLmNvbSIsIl9fdiI6MH0sImlhdCI6MTUzNTMzNTc1NiwiZXhwIjoxNTM1NTA4NTU2fQ.M4q6AYqZjs3y3ZCI8EEYyl84BXOhwqGnACxSrIn7AFM" alt="">
+
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
 
     <a href="#" onclick="signOut();">Sign out</a>
@@ -24,7 +26,7 @@
             console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
 
             var id_token = googleUser.getAuthResponse().id_token;
-            console.log(id_token);
+            //console.log(id_token);
 
             var xhr = new XMLHttpRequest();
             xhr.open('POST', '/google');
